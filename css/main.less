@@ -151,11 +151,17 @@ div#bodyContent {
         display: inline-block;
         font-family: 'iteme';
         font-size: 2.5em;
-        height: 150px;
+        height: 120px;
         line-height: 150px;
+        opacity: 0;
         text-align: center;
         text-decoration: none;
-        width: 150px;
+        transition: opacity 1.5s, height 1.5s, width 1.5s;
+        -webkit-transition: opacity 1.5s, height 1.5s, width 1.5s;
+        -moz-transition: opacity 1.5s, height 1.5s, width 1.5s;
+        -ms-transition: opacity 1.5s, height 1.5s, width 1.5s;
+        -o-transition: opacity 1.5s, height 1.5s, width 1.5s;
+        width: 120px;
         @linkHoverSaturation: 80%;
         @twitterBlue: hsla(196, @linkHoverSaturation, 46%, 1);
         @linkedInIndigo: hsla(203, @linkHoverSaturation, 38%, 1);
@@ -165,6 +171,11 @@ div#bodyContent {
         @emailOrange: hsla(38, @linkHoverSaturation, 50%, 1);
         @phonePurple: hsla(278, @linkHoverSaturation, 50%, 1);
         @hoverSaturateValue: 60%;
+        &.Visible {
+            height: 150px;
+            opacity: 1;
+            width: 150px;
+        }
         &#twitterIconLink {
             background-color: desaturate(@twitterBlue, @hoverSaturateValue);
             &:hover {

@@ -129,10 +129,21 @@ div#bodyContent a.IconLink {
   display: inline-block;
   font-family: 'iteme';
   font-size: 2.5em;
-  height: 150px;
+  height: 120px;
   line-height: 150px;
+  opacity: 0;
   text-align: center;
   text-decoration: none;
+  transition: opacity 1.5s, height 1.5s, width 1.5s;
+  -webkit-transition: opacity 1.5s, height 1.5s, width 1.5s;
+  -moz-transition: opacity 1.5s, height 1.5s, width 1.5s;
+  -ms-transition: opacity 1.5s, height 1.5s, width 1.5s;
+  -o-transition: opacity 1.5s, height 1.5s, width 1.5s;
+  width: 120px;
+}
+div#bodyContent a.IconLink.Visible {
+  height: 150px;
+  opacity: 1;
   width: 150px;
 }
 div#bodyContent a.IconLink#twitterIconLink {
