@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 /*
  * HTML5 Boilerplate
  *
@@ -26,9 +27,8 @@ textarea {
   color: #222;
 }
 body {
-  font-family: 'Avenir', 'Futura', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -86,102 +86,116 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.MainContent {
-  margin: 0 auto;
-  width: 960px;
+body {
+  background: #644695;
+  bottom: 0;
+  font-family: 'Lato', sans-serif;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-header {
-  background-color: #1193d4;
+body .IconLink {
+  font-family: 'iteme';
+}
+body #headerText {
   color: white;
-  display: block;
-  height: 48px;
-  margin-bottom: 24px;
+  font-size: 40px;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  top: 8%;
   width: 100%;
 }
-header div.MainContent {
-  display: block;
+body #roles {
+  padding-top: 20px;
+  position: absolute;
+  top: 30%;
+  width: 100%;
 }
-header div.MainContent p {
-  display: inline-block;
+body #roles #rolesContainer {
+  margin: auto;
+  width: 704px;
 }
-header div.MainContent p#headerName {
-  float: left;
-  font-size: 2em;
-  font-weight: 500;
-  height: 1em;
-  line-height: 1em;
-  margin: 0.25em 0 0 0;
-}
-header div.MainContent p#headerBio {
-  float: right;
-  font-weight: 300;
-  height: 3em;
-  line-height: 1em;
-  margin: 1em 0;
-}
-div#bodyContent {
-  display: block;
-}
-div#bodyContent a.IconLink {
-  background-color: grey;
-  border-radius: 75px;
+body #roles #rolesContainer a {
   color: white;
   display: inline-block;
-  font-family: 'iteme';
-  font-size: 2.5em;
-  height: 150px;
-  line-height: 150px;
   text-align: center;
   text-decoration: none;
-  width: 150px;
+  vertical-align: top;
+  width: 350px;
 }
-div#bodyContent a.IconLink#twitterIconLink {
-  background-color: #5e808d;
+body #roles #rolesContainer a:hover img {
+  opacity: 1;
 }
-div#bodyContent a.IconLink#twitterIconLink:hover {
-  background-color: #17a1d3;
+body #roles #rolesContainer a h1 {
+  font-size: 30px;
+  text-shadow: 0 1px black;
+  width: 100%;
 }
-div#bodyContent a.IconLink#linkedInIconLink {
-  background-color: #4e6574;
+body #roles #rolesContainer a img {
+  opacity: 0.65;
+  transition: opacity 0.45s;
+  -webkit-transition: opacity 0.45s;
+  -moz-transition: opacity 0.45s;
+  -ms-transition: opacity 0.45s;
+  -o-transition: opacity 0.45s;
 }
-div#bodyContent a.IconLink#linkedInIconLink:hover {
-  background-color: #1373ae;
-}
-div#bodyContent a.IconLink#angelListIconLink {
-  background-color: #6f9f87;
-}
-div#bodyContent a.IconLink#angelListIconLink:hover {
-  background-color: #27e787;
-}
-div#bodyContent a.IconLink#githubIconLink {
-  background-color: #99666e;
-}
-div#bodyContent a.IconLink#githubIconLink:hover {
-  background-color: #e6193c;
-}
-div#bodyContent a.IconLink#blogIconLink {
-  background-color: #999666;
-}
-div#bodyContent a.IconLink#blogIconLink:hover {
-  background-color: #e6d819;
-}
-div#bodyContent a.IconLink#emailIconLink {
-  background-color: #998666;
-}
-div#bodyContent a.IconLink#emailIconLink:hover {
-  background-color: #e69b19;
-}
-div#bodyContent a.IconLink#phoneIconLink {
-  background-color: #866699;
-}
-div#bodyContent a.IconLink#phoneIconLink:hover {
-  background-color: #9b19e6;
-}
-div#bodyContent img#personalLogo {
-  height: 100px;
+body #presence {
+  border-top: 2px solid rgba(77, 54, 114, 0.75);
+  bottom: 0;
+  box-shadow: 0 -1px rgba(255, 255, 255, 0.2);
+  left: 0;
   position: absolute;
-  top: 335px;
-  width: 100px;
+  right: 0;
+  text-align: center;
+}
+body #presence #resume {
+  left: 0;
+  margin-left: 1em;
+  position: absolute;
+  top: 0;
+}
+body #presence #resume a {
+  color: #c2b3db;
+  text-decoration: none;
+  transition: color 0.45s;
+  -webkit-transition: color 0.45s;
+  -moz-transition: color 0.45s;
+  -ms-transition: color 0.45s;
+  -o-transition: color 0.45s;
+}
+body #presence #resume a:hover {
+  color: white;
+}
+body #presence #links {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  vertical-align: top;
+}
+body #presence #links li {
+  display: inline-block;
+  margin: 0 5px;
+}
+body #presence #links li a {
+  color: #c2b3db;
+  text-decoration: none;
+  transition: color 0.45s;
+  -webkit-transition: color 0.45s;
+  -moz-transition: color 0.45s;
+  -ms-transition: color 0.45s;
+  -o-transition: color 0.45s;
+}
+body #presence #links li a:hover {
+  color: white;
+}
+body #presence #copyright {
+  color: #c2b3db;
+  margin-right: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 /* ==========================================================================
    Helper classes

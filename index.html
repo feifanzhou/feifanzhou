@@ -1,85 +1,95 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>    <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>     <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>     <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Feifan Zhou</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Feifan Zhou</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/vendor/retina.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/retina.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <header>
-            <div class='MainContent'>
-                <p id='headerName'>Feifan Zhou</p>
-                <p id='headerBio'>Developer. Entrepreneur. Student. Always growing, always learning.</p>
-            </div>
-        </header>
+    <!-- Add your site or application content here -->
+    <p id='headerText'>Hi! I'm Feifan. This is what I do.</p>
+    <div id='roles'>
+      <div id='rolesContainer'>
+        <a href='http://www.tunetapmusic.com' target='_blank'>
+          <div id='tunetap'>
+            <h1>Cofounder + CEO</h1>
+            <img src='img/tunetap.png' width='250' />
+          </div>
+        </a>
+        <a href='http://www.artzoco.com/welcome' target='_blank'>
+          <div id='artzoco'>
+            <h1>Cofounder + CTO</h1>
+            <img src='img/artzoco.png' width='250' />
+          </div>
+        </a>
+      </div>
+    </div>
+    <footer id='presence'>
+      <p id='resume'><a href='resume.pdf'>My resume</a></p>
+      <ul id='links'>
+        <li><a class='IconLink' href='mailto:feifan@me.com'>e</a></li>
+        <li><a class='IconLink' href='https://twitter.com/FeifanZ'>t</a></li>
+        <li><a class='IconLink' href='http://www.linkedin.com/in/feifanz/'>l</a></li>
+        <li><a class='IconLink' href='https://github.com/feifanzhou'>g</a></li>
+        <li><a class='IconLink' href='tel:+14016800897'>p</a></li>
+      </ul>
+      <p id='copyright'>Copyright &copy; Feifan Zhou 2013</p>
+    </footer>
 
-        <div class='MainContent' id='bodyContent'>
-            <div id='iconLinkBlock'>
-                <a class='IconLink' id='twitterIconLink' href='https://twitter.com/FeifanZ'>t</a> <!-- Blue -->
-                <a class='IconLink' id='linkedInIconLink' href='http://www.linkedin.com/in/feifanz/'>l</a> <!-- Indigo -->
-                <a class='IconLink' id='angelListIconLink' href='https://angel.co/feifan'>a</a> <!-- Green -->
-                <a class='IconLink' id='githubIconLink' href='https://github.com/feifanzhou'>g</a> <!-- Red -->
-                <a class='IconLink' id='blogIconLink' href='http://feifanzhou.tumblr.com'>b</a> <!-- Yellow -->
-                <a class='IconLink' id='emailIconLink' href='mailto:feifan@me.com'>e</a> <!-- Orange -->
-                <a class='IconLink' id='phoneIconLink' href='tel:+14016800897'>p</a> <!-- Purple -->
-                <img id='personalLogo' src='img/symbol.png' />
-            </div>
-        </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!-- <script type="text/javascript"> // Place links in circle
+      function loadLinkCircle() {
+        var increase = Math.PI * 2 / $('.IconLink').length;
+        var x = 0, y = 0, angle = -Math.PI / 2;
+        $(".IconLink").each(function() {
+          x = 200 * Math.cos(angle) + window.innerWidth / 2 - 75;
+          y = 200 * Math.sin(angle) + 300;
+          this.style.position = 'absolute';
+          this.style.left = x + 'px';
+          this.style.top = y + 'px';
+          angle += increase;
+        });
+        setTimeout(function() { $('.IconLink').addClass('Visible'); }, 150);
+      }
+      function positionSymbol() {
+        var symbol = document.getElementById('personalLogo');
+        var x = window.innerWidth / 2 - (symbol.width / 2);
+        symbol.style.left = x + 'px';
+      }
+      loadLinkCircle();
+      positionSymbol();
+      $(window).resize(function() {
+        loadLinkCircle();
+        positionSymbol();
+      });
+    </script> -->
 
-        <script type="text/javascript"> // Place links in circle
-            function loadLinkCircle() {
-                var increase = Math.PI * 2 / $('.IconLink').length;
-                var x = 0, y = 0, angle = -Math.PI / 2;
-                $(".IconLink").each(function() {
-                    x = 200 * Math.cos(angle) + window.innerWidth / 2 - 75;
-                    y = 200 * Math.sin(angle) + 300;
-                    this.style.position = 'absolute';
-                    this.style.left = x + 'px';
-                    this.style.top = y + 'px';
-                    angle += increase;
-                });
-            }
-            function positionSymbol() {
-                var symbol = document.getElementById('personalLogo');
-                var x = window.innerWidth / 2 - (symbol.width / 2);
-                symbol.style.left = x + 'px';
-            }
-            loadLinkCircle();
-            positionSymbol();
-            $(window).resize(function() {
-                loadLinkCircle();
-                positionSymbol();
-            });
-        </script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-37940654-2'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-37940654-2'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
 </html>
