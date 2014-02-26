@@ -111,7 +111,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    background: lighten(rgb(77, 54, 114), 10%);
+    background: #EEE;
     bottom: 0;
     font-family: 'Lato', sans-serif;
     left: 0;
@@ -122,7 +122,7 @@ body {
         font-family: 'iteme';
     }
     #headerText {
-        color: white;
+        color: #444;
         font-size: 40px;
         font-weight: 300;
         position: absolute;
@@ -139,7 +139,7 @@ body {
             margin: auto;
             width: 704px;
             a {
-                color: white;
+                color: #444;
                 display: inline-block;
                 text-align: center;
                 text-decoration: none;
@@ -152,7 +152,7 @@ body {
                 }
                 h1 {
                     font-size: 30px;
-                    text-shadow: 0 1px black;
+                    text-shadow: 0 1px #FFF;
                     width: 100%;
                 }
                 img {
@@ -165,9 +165,24 @@ body {
                 }
             }
         }
+        #additionalRoles {
+            margin: auto;
+            width: 704px;
+            p {
+                color: #666;
+                text-align: center;
+                &:first-child {
+                    margin-top: 2em;
+                }
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
     }
     #presence {
-        border-top: 2px solid rgba(77, 54, 114, 0.75);
+        border-top: 2px solid #CCC;
         bottom: 0;
         box-shadow: 0 -1px rgba(255, 255, 255, 0.2);
         left: 0;
@@ -180,7 +195,7 @@ body {
             position: absolute;
             top: 0;
             a {
-                color: lighten(rgb(77, 54, 114), 45%);
+                color: #666;
                 text-decoration: none;
                 transition: color 0.45s;
                 -webkit-transition: color 0.45s;
@@ -201,7 +216,7 @@ body {
                 display: inline-block;
                 margin: 0 5px;
                 a {
-                    color: lighten(rgb(77, 54, 114), 45%);
+                    color: #666;
                     text-decoration: none;
                     transition: color 0.45s;
                     -webkit-transition: color 0.45s;
@@ -215,7 +230,7 @@ body {
             }
         }
         #copyright {
-            color: lighten(rgb(77, 54, 114), 45%);
+            color: #666;
             margin-right: 1em;
             position: absolute;
             right: 0;
