@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  background: #644695;
+  background: #EEE;
   bottom: 0;
   font-family: 'Lato', sans-serif;
   left: 0;
@@ -99,7 +99,7 @@ body .IconLink {
   font-family: 'iteme';
 }
 body #headerText {
-  color: white;
+  color: #444;
   font-size: 40px;
   font-weight: 300;
   position: absolute;
@@ -118,7 +118,7 @@ body #roles #rolesContainer {
   width: 704px;
 }
 body #roles #rolesContainer a {
-  color: white;
+  color: #444;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -130,7 +130,7 @@ body #roles #rolesContainer a:hover img {
 }
 body #roles #rolesContainer a h1 {
   font-size: 30px;
-  text-shadow: 0 1px black;
+  text-shadow: 0 1px #FFF;
   width: 100%;
 }
 body #roles #rolesContainer a img {
@@ -141,8 +141,23 @@ body #roles #rolesContainer a img {
   -ms-transition: opacity 0.45s;
   -o-transition: opacity 0.45s;
 }
+body #roles #additionalRoles {
+  margin: auto;
+  width: 704px;
+}
+body #roles #additionalRoles p {
+  color: #666;
+  text-align: center;
+}
+body #roles #additionalRoles p:first-child {
+  margin-top: 2em;
+}
+body #roles #additionalRoles p a {
+  color: black;
+  text-decoration: none;
+}
 body #presence {
-  border-top: 2px solid rgba(77, 54, 114, 0.75);
+  border-top: 2px solid #CCC;
   bottom: 0;
   box-shadow: 0 -1px rgba(255, 255, 255, 0.2);
   left: 0;
@@ -157,7 +172,7 @@ body #presence #resume {
   top: 0;
 }
 body #presence #resume a {
-  color: #c2b3db;
+  color: #666;
   text-decoration: none;
   transition: color 0.45s;
   -webkit-transition: color 0.45s;
@@ -179,7 +194,7 @@ body #presence #links li {
   margin: 0 5px;
 }
 body #presence #links li a {
-  color: #c2b3db;
+  color: #666;
   text-decoration: none;
   transition: color 0.45s;
   -webkit-transition: color 0.45s;
@@ -191,7 +206,7 @@ body #presence #links li a:hover {
   color: white;
 }
 body #presence #copyright {
-  color: #c2b3db;
+  color: #666;
   margin-right: 1em;
   position: absolute;
   right: 0;
@@ -208,7 +223,6 @@ body #presence #copyright {
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-
   *text-indent: -9999px;
 }
 .ir:before {
@@ -271,10 +285,8 @@ body #presence #copyright {
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -306,7 +318,6 @@ body #presence #copyright {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
-  
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -321,8 +332,8 @@ body #presence #copyright {
     content: " (" attr(title) ")";
   }
   /*
-       * Don't show links for images, or javascript/internal links
-       */
+     * Don't show links for images, or javascript/internal links
+     */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
@@ -336,7 +347,6 @@ body #presence #copyright {
   thead {
     display: table-header-group;
     /* h5bp.com/t */
-  
   }
   tr,
   img {
@@ -345,7 +355,7 @@ body #presence #copyright {
   img {
     max-width: 100% !important;
   }
-  @page  {
+  @page {
     margin: 0.5cm;
   }
   p,

@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Feifan Zhou</title>
-    <meta name="description" content="">
+    <meta name="description" content="Laugh. Learn. Live | Cofounder + CEO @Tunetap, Tech director @ArtZoco">
     <meta name="viewport" content="width=device-width">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -26,11 +26,11 @@
     <p id='headerText'>Hi! I'm Feifan. This is what I do.</p>
     <div id='roles'>
       <div id='rolesContainer'>
-        <a href='http://www.tunetapmusic.com' target='_blank'>
+        <a href='https://www.tunetap.com' target='_blank'>
           <div id='tunetap'>
             <h1>Cofounder + CEO</h1>
             <p class='hidden'>Tunetap</p>
-            <p class='hidden'>Helping musicians play more concerts with a guaranteed audience.</p>
+            <p class='hidden'>Helping musicians and venues presell tickets to create concerts without risk.</p>
             <img src='img/tunetap.png' width='250' alt='Tunetap' />
           </div>
         </a>
@@ -38,9 +38,19 @@
           <div id='artzoco'>
             <h1>Cofounder + CTO</h1>
             <p class='hidden'>ArtZoco</p>
+            <p class='hidden'>Empowering artisans in developing countries to sell their products to an international audience.</p>
             <img src='img/artzoco.png' width='250' alt='ArtZoco' />
           </div>
         </a>
+      </div>
+      <div id='additionalRoles'>
+        <p>
+          Web + iOS contractor, <a href='https://www.bigredboxes.com' target='_blank'>BRSS</a> |
+          Tech advisor, <a href='https://www.daapr.com' target='_blank'>Daapr</a> |
+          Tech advisor, <a href='http://timetokick.it' target='_blank'>Kick.It</a> |
+          Minor Bitcoin investor
+        </p>
+        <p>Interested in UX design, society, and psychology changing the way people work.</p>
       </div>
     </div>
     <footer id='presence'>
@@ -52,7 +62,12 @@
         <li><a class='IconLink' href='https://github.com/feifanzhou'>g</a></li>
         <li><a class='IconLink' href='tel:+14016800897'>p</a></li>
       </ul>
-      <p id='copyright'>Copyright &copy; Feifan Zhou 2013</p>
+      <p id='copyright'>
+        Copyright &copy; Feifan Zhou <span id='copyrightYear'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <script type='text/javascript'>
+          document.getElementById('copyrightYear').innerHTML = new Date().getFullYear();
+        </script>
+      </p>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
