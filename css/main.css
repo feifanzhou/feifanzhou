@@ -102,20 +102,20 @@ body #headerText {
   color: #444;
   font-size: 40px;
   font-weight: 300;
+  margin-bottom: 0;
   position: absolute;
   text-align: center;
   top: 8%;
   width: 100%;
 }
 body #roles {
-  padding-top: 20px;
   position: absolute;
-  top: 30%;
+  top: 25%;
   width: 100%;
 }
 body #roles #rolesContainer {
   margin: auto;
-  width: 704px;
+  width: 350px;
 }
 body #roles #rolesContainer a {
   color: #444;
@@ -125,21 +125,23 @@ body #roles #rolesContainer a {
   vertical-align: top;
   width: 350px;
 }
-body #roles #rolesContainer a:hover img {
-  opacity: 1;
-}
 body #roles #rolesContainer a h1 {
   font-size: 30px;
   text-shadow: 0 1px #FFF;
   width: 100%;
 }
-body #roles #rolesContainer a img {
-  opacity: 0.65;
-  transition: opacity 0.45s;
-  -webkit-transition: opacity 0.45s;
-  -moz-transition: opacity 0.45s;
-  -ms-transition: opacity 0.45s;
-  -o-transition: opacity 0.45s;
+body #roles #rolesContainer a h1:first-child {
+  margin-top: 0;
+}
+body #roles #rolesContainer a #tunetap {
+  margin-bottom: 25px;
+}
+body #roles #rolesContainer a #artzoco {
+  margin-top: 25px;
+  opacity: 0.5;
+}
+body #roles #rolesContainer a #artzoco h1 {
+  font-size: 14px;
 }
 body #roles #additionalRoles {
   margin: auto;
@@ -203,7 +205,7 @@ body #presence #links li a {
   -o-transition: color 0.45s;
 }
 body #presence #links li a:hover {
-  color: white;
+  color: #999;
 }
 body #presence #copyright {
   color: #666;
