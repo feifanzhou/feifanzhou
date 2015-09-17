@@ -1,113 +1,312 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>    <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>     <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>     <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Feifan Zhou</title>
-    <meta name="description" content="Laugh. Learn. Live | Cofounder + CEO @Tunetap, Tech director @ArtZoco">
-    <meta name="viewport" content="width=device-width">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="js/vendor/retina.js"></script>
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <p id='headerText'>Hi! I'm Feifan. This is what I do.</p>
-    <div id='roles'>
-      <div id='rolesContainer'>
-        <a href='https://www.tunetap.com' target='_blank'>
-          <div id='tunetap'>
-            <h1>Cofounder + CEO</h1>
-            <p class='hidden'>Tunetap</p>
-            <p class='hidden'>Helping musicians and venues presell tickets to create concerts without risk.</p>
-            <img src='img/tunetap.png' width='250' alt='Tunetap' />
-          </div>
+<html>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Feifan Zhou</title>
+  <meta name="description" content="Laugh. Learn. Live | Feifan Zhou">
+  <meta name="viewport" content="width=device-width">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
+  <style>
+    @font-face {
+        font-family: icons;
+        src: url('fonts/siteme.eot');
+        src: url('fonts/siteme.eot?') format('eot'),
+             url('fonts/siteme.woff') format('woff'),
+             url('fonts/siteme.ttf') format('truetype');
+    }
+    body {
+      font-family: 'Lato', sans-serif;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+    body:before {
+      background: black;
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 50%;
+    }
+    @media screen and (max-width: 720px) {
+      body:before {
+        background: white;
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    .Content {
+      position: absolute;
+    }
+    .Past, .Future {
+      box-sizing: border-box;
+      float: left;
+      position: relative;
+      width: 50%;
+      z-index: 1;
+    }
+    .Past {
+      color: white;
+      padding: 2em 8em 2em 2em;
+    }
+    .Past li {
+      border-bottom: 1px solid #555;
+    }
+    .Future {
+      padding: 2em 2em 2em 8em;
+    }
+    .Future li {
+      border-bottom: 1px solid #DDD;
+    }
+    .Future a {
+      color: black;
+    }
+    .Present {
+      background: url('https://graph.facebook.com/100001324728942/picture?width=160&height=160') no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      border: 3px solid white; /* rgb(241, 98, 20); */
+      border-radius: 83px;
+      height: 160px;
+      left: 50%;
+      margin: -60px 0 0 -83px;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      width: 160px;
+      z-index: 2;
+    }
+    .Present:after {
+      background: rgba(255, 255, 255, 0.6);
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .Present h1 {
+      color: #444;
+      margin: 0;
+      padding: 0.5em 0;
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+    .Present-Images {
+      line-height: 60px;
+      height: 60px;
+      padding-top: 10px;
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+    .Present-Images img {
+      display: inline-block;
+      height: auto;
+      margin: 0 0.25em;
+      width: 40px;
+    }
+    #cuadLogo {
+      width: 32px;
+    }
+    .Entries {
+      display: inline-block;
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .Entries li {
+      opacity: 0.7;
+      padding: 1em 0;
+      transition: opacity 0.25s;
+      -webkit-transition: opacity 0.25s;
+    }
+    .Entries li:hover {
+      opacity: 1;
+    }
+    .Entries li:last-child {
+      border-bottom: none;
+    }
+    .Entries .Status {
+      font-size: 0.8em;
+      font-weight: bold;
+      margin-top: 0.5em;
+      opacity: 0.5;
+    }
+    h2, p {
+      line-height: 1.5em;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1em;
+    }
+    p {
+      font-weight: 300;
+    }
+    .Resume, .Links {
+      bottom: 0;
+      box-sizing: border-box;
+      opacity: 0.5;
+      position: fixed;
+      right: 0;
+      text-align: center;
+      width: 50%;
+    }
+    .Resume {
+      font-variant: small-caps;
+      left: 0;
+    }
+    .Resume a {
+      background: black;
+      border-radius: 0.25em;
+      display: inline-block;
+      padding: 0.5em;
+      position: relative;
+      z-index: 2;
+    }
+    .Links {
+      padding-bottom: 0.5em;
+    }
+    .Links a {
+      color: black;
+      display: inline-block;
+      margin: 0 0.25em;
+    }
+    .IconLink {
+        font-family: 'icons';
+    }
+    @media screen and (max-width: 720px) {
+      .Past, .Future {
+        float: none;
+        width: 100%;
+      }
+      .Past {
+        background: black;
+        padding: 2em 2em 4em 2em;
+      }
+      .Future {
+        padding: 4em 2em 2em 2em;
+      }
+      .Present {
+        margin: -43px 0 0 -83px;
+      }
+      .Resume, .Links {
+        display: inline-block;
+        float: left;
+        position: relative;
+        z-index: 2;
+      }
+      .Resume a {
+        background: none;
+      }
+      .Links {
+        padding-top: 0.5em;
+      }
+      .Links a {
+        color: white;
+      }
+    }
+  </style>
+</html>
+<body>
+  <div class='Content' id='content'>
+    <div class='Past'>
+      <h1>Past</h1>
+      <ol class='Entries'>
+        <li>
+          <a href='http://www.cornell.edu/' target='_blank'>
+            <h2>CS '15, Cornell University</h2>
+            <p>Business focus + Kessler Fellow</p>
+          </a>
+          <p class='Status'>Aug 2012 &ndash; Aug 2015</p>
+        </li>
+        <li>
+          <a href='https://www.tunetap.com' target='_blank'>
+            <h2>Cofounder + CEO, Tunetap</h2>
+            <p>Tunetap is a site that lets musicians and venues presell tickets to reduce risk and predict demand before booking a show.</p>
+          </a>
+          <p class='Status'>Currently restructuring</p>
+        </li>
+        <li>
+          <a href='https://medium.com/@feifanz/hello-real-world-b3592150339' target='_blank'>
+            <h2>Hello Real World</h2>
+            <p>A post about my thoughts on CS in college, which became mildly popular</p>
+          </a>
+        </li>
+        <li>
+          <a href='http://www.artzoco.com/' target='_blank'>
+            <h2>Lead Developer + Designer, ArtZoco</h2>
+            <p>ArtZoco was a site that provided a peer-to-peer ecommerce marketplace for Peruvian artisans.</p>
+          </a>
+        </li>
+        <li>
+          <a href='http://www.binpress.com/tutorials/list/objective-c' target='_blank'>
+            <h2>Creator + Author, CupsOfCocoa</h2>
+            <p>Cups of Cocoa is a comprehensive set of tutorials for learning iOS development, assuming no prior coding knowledge, written in simple, clear English.</p>
+          </a>
+          <p class='Status'>Sold to Binpress, mid-2014</p>
+        </li>
+      </ol>
+    </div>
+    <div class='Present'>
+      <h1>Now</h1>
+      <div class='Present-Images'>
+        <a href='https://thatfeed.com' target='_blank'>
+          <img src='images/sen.png' />
         </a>
-        <hr />
-        <a href='http://www.artzoco.com/' target='_blank'>
-          <div id='artzoco'>
-            <h1>Former Cofounder + CTO</h1>
-            <p class='hidden'>ArtZoco</p>
-            <p class='hidden'>Empowering artisans in developing countries to sell their products to an international audience.</p>
-            <img src='img/artzoco.png' width='125' alt='ArtZoco' />
-          </div>
+        <a href='http://cuappdev.org' target='_blank'>
+          <img src='images/cuad.png' id='cuadLogo' />
         </a>
-      </div>
-      <div id='additionalRoles'>
-        <p>
-          Web + iOS contractor, <a href='https://www.bigredboxes.com' target='_blank'>BRSS</a> |
-          Tech advisor, <a href='https://www.daapr.com' target='_blank'>Daapr</a> |
-          Tech advisor, <a href='http://timetokick.it' target='_blank'>Kick.It</a>
-        </p>
-        <p>Interested in UX design, society, and psychology changing the way people work.</p>
       </div>
     </div>
-    <footer id='presence'>
-      <p id='resume'><a href='resume.pdf'>My resume</a></p>
-      <ul id='links'>
-        <li><a class='IconLink' href='mailto:feifan@me.com'>e</a></li>
-        <li><a class='IconLink' href='https://twitter.com/FeifanZ'>t</a></li>
-        <li><a class='IconLink' href='http://www.linkedin.com/in/feifanz/'>l</a></li>
-        <li><a class='IconLink' href='https://github.com/feifanzhou'>g</a></li>
-        <li><a class='IconLink' href='tel:+14016800897'>p</a></li>
-      </ul>
-      <p id='copyright'>
-        Copyright &copy; Feifan Zhou <span id='copyrightYear'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <script type='text/javascript'>
-          document.getElementById('copyrightYear').innerHTML = new Date().getFullYear();
-        </script>
-      </p>
-    </footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- <script type="text/javascript"> // Place links in circle
-      function loadLinkCircle() {
-        var increase = Math.PI * 2 / $('.IconLink').length;
-        var x = 0, y = 0, angle = -Math.PI / 2;
-        $(".IconLink").each(function() {
-          x = 200 * Math.cos(angle) + window.innerWidth / 2 - 75;
-          y = 200 * Math.sin(angle) + 300;
-          this.style.position = 'absolute';
-          this.style.left = x + 'px';
-          this.style.top = y + 'px';
-          angle += increase;
-        });
-        setTimeout(function() { $('.IconLink').addClass('Visible'); }, 150);
-      }
-      function positionSymbol() {
-        var symbol = document.getElementById('personalLogo');
-        var x = window.innerWidth / 2 - (symbol.width / 2);
-        symbol.style.left = x + 'px';
-      }
-      loadLinkCircle();
-      positionSymbol();
-      $(window).resize(function() {
-        loadLinkCircle();
-        positionSymbol();
-      });
-    </script> -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      var _gaq=[['_setAccount','UA-37940654-2'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src='//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-  </body>
-</html>
+    <div class='Future'>
+      <h1>Future</h1>
+      <ol class='Entries'>
+        <li>
+          <a href='http://crystal-lang.org/' target='_blank'>
+            <h2>Web framework in Crystal</h2>
+            <p>I'm a big fan of Ruby, and Crystal's performance potential makes me really excited about creating a performant, elegant web framework.</p>
+          </a>
+          <p class='Status'>In planning</p>
+        </li>
+        <li>
+          <h2>A better IDE</h2>
+          <p>Existing IDEs are some combination of bloated, ugly, and confusing. I think there's massive opportunities for design and technical improvements.</p>
+        </li>
+        <li>
+          <h2>Practical, economical health tracking</h2>
+          <p>We're seeing significant advances in certain health trackers, such as glucose monitors. In order to fully understand our health, we need to measure dozens of factors, such as vitamin, ketones, and insulin levels — and be able to do so within minutes, every day.</p>
+        </li>
+        <li>
+          <a href='http://waitbutwhy.com/2015/08/how-and-why-spacex-will-colonize-mars.html' target='_blank'>
+            <h2>Humanity as a multi-planetary species</h2>
+            <p>I believe it's vitally important for humanity to expand beyond Earth, and would love to meaningfully contribute towards this goal.</p>
+          </a>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class='Resume'>
+    <a href='files/resume.pdf'>Resume</a>
+  </div>
+  <div class='Links'>
+    <a class='IconLink' href='mailto:feifan@me.com'>e</a>
+    <a class='IconLink' href='https://twitter.com/FeifanZ'>t</a>
+    <a class='IconLink' href='http://www.linkedin.com/in/feifanz/'>l</a>
+    <a class='IconLink' href='https://github.com/feifanzhou'>g</a>
+  </div>
+  <script type='text/javascript'>
+    var content = document.getElementById('content');
+    var contentHeight = content.clientHeight;
+    var windowHeight = window.innerHeight;
+    var topPosition = (windowHeight - contentHeight) / 2;
+    if (topPosition < 0)
+      topPosition = 0;
+    content.style.top = topPosition + 'px';
+  </script>
+</body>
