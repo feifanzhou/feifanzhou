@@ -129,8 +129,15 @@
       transition: opacity 0.25s;
       -webkit-transition: opacity 0.25s;
     }
+    .Entries li a {
+      transition: color 0.25s;
+      -webkit-transition: color 0.25s;
+    }
     .Entries li:hover {
       opacity: 1;
+    }
+    .Entries li:hover a {
+      color: rgb(241, 98, 20);
     }
     .Entries li:last-child {
       border-bottom: none;
@@ -163,6 +170,7 @@
     .Resume {
       font-variant: small-caps;
       left: 0;
+      opacity: 1;
     }
     .Resume a {
       background: black;
@@ -267,7 +275,7 @@
     <div class='Present'>
       <h1>Now</h1>
       <div class='Present-Images'>
-        <a href='https://thatfeed.com' target='_blank'>
+        <a href='http://stoat.co/' target='_blank'>
           <img src='images/sen.png' />
         </a>
         <a href='http://cuappdev.org' target='_blank'>
